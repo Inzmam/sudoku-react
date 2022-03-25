@@ -1,0 +1,27 @@
+button.btn {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.btn.btn-easy {
+  background-color: #389e2f;
+}
+
+button.btn.btn-medium {
+  background-color: #2f3f9e;
+}
+
+button.btn.btn-hard {
+  background-color: #9e2f47;
+}
+
+button.btn.btn-half {
+  width: 50%;
+}
