@@ -18,7 +18,7 @@ export const solveBoard = (board_data) => {
 
 export const fetchBoard = (difficulty_level) => {
   return function (dispatch) {
-    AxiosClient.get(`/board?difficulty=${difficulty_level || 'medium'}`).then((res) => {
+    AxiosClient.get(`/board?difficulty=${difficulty_level || 'easy'}`).then((res) => {
       dispatch(triggerFetchBoard(res?.data?.board));
     });
   };
