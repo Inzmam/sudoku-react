@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import H1 from './components/H1/h1';
 import Table from './components/Table/table';
@@ -6,8 +7,6 @@ import SudokuDifficultyControls from './services/SudokuDifficultyControls/sudoku
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBoard } from './redux/actions/board_actions';
-
-import './services/stylesheets/index.css';
 
 function App() {
   let dispatch = useDispatch();
@@ -31,9 +30,21 @@ function App() {
 
   return (
     <div className='container'>
-      <H1>HTML Sudoku Board</H1>
-      <Table>{renderSudokuRow()}</Table>
-      <SudokuDifficultyControls />
+      <div className='row'>
+        <div className='col-12 text-center'>
+          <H1>HTML Sudoku Board</H1>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='col-12 d-flex justify-content-center'>
+          <Table>{renderSudokuRow()}</Table>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='col-6 offset-3 text-center'>
+          <SudokuDifficultyControls />
+        </div>
+      </div>
     </div>
   );
 }

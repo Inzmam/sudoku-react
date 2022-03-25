@@ -19,20 +19,20 @@ function SudokuDifficultyControls() {
   const renderControls = () => {
     let controls_html = (
       <>
-        <div>
+        <div className='mt-3 mb-3'>
           <H3 className={'d-inline'}>Difficulty: </H3>
-          <Button type='button' className={'btn btn-easy m-2'} onClick={handleClick}>
+          <Button type='button' className={'btn btn-primary m-2'} onClick={handleClick}>
             Easy
           </Button>
-          <Button type='button' className={'btn btn-medium m-2'} onClick={handleClick}>
+          <Button type='button' className={'btn btn-secondary m-2'} onClick={handleClick}>
             Medium
           </Button>
-          <Button type='button' className={'btn btn-hard m-2'} onClick={handleClick}>
+          <Button type='button' className={'btn btn-danger m-2'} onClick={handleClick}>
             Hard
           </Button>
         </div>
-        <div>
-          <Button type='button' className={'btn btn-easy btn-half m-2'} onClick={handleSolve}>
+        <div className='mb-3'>
+          <Button type='button' className={'btn btn-dark btn-lg w-100 mb-2'} onClick={handleSolve}>
             Solve
           </Button>
         </div>

@@ -8,7 +8,6 @@ const AxiosClient = () => {
   let instance = axios.create(defaultOptions);
 
   instance.interceptors.request.use(function (config) {
-    debugger;
     config.headers = {
       'Content-Type': 'application/x-www-form-urlencoded',
     };
